@@ -9,12 +9,23 @@
 
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
-<p>成功修改</p>
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+<div id="root">
+  <h1 id="say">Hello World!</h1>
+  <div>
+    <button class="pre">变红</button>
+    <button class="next">复原</button>
+  </div>
+</div>
+<script>
+    const h1 = document.getElementById('say');
+    const btn = document.querySelectorAll('button');
+    btn[0].onclick = function() {
+        h1.style.color = 'red';
+    }
+    btn[1].onclick = function() {
+        h1.style.color = 'black';
+    }
+</script>
 
 </body>
 </html>
